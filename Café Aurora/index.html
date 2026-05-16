@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=coffee" />
+    <link rel="stylesheet" href="style.css">
+    <title>Café Aurora</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li> Início </li>
+                <a href="#Especialidades">
+                    <li> Especialidades </li>
+                </a>
+                <a href="#Cardapio">
+                    <li> Cardápio </li>
+                </a>
+                <a href="#FAQ">
+                    <li> FAQ </li>
+                </a>
+                <a href="#Reserva"><li> Reserva </li> </a>
+            </ul>
+        </nav>
+
+        <div class="cabecalho">
+            <h1> Café Aurora </h1>
+            <cite> Grãos especiais, torra artesanal, alma cearense </cite>
+        </div>
+    </header>
+
+    <main>
+        <section id="Especialidades">
+            <h2> Nossas Especialidades </h2>
+            <br>
+            <hr>
+
+            <div class="especialidades-cards">
+                <div class="card">
+                    <img src="images/coffee-icon.png" alt="Ícone de Café">
+                    <h3> Grãos Especiais </h3>
+                    <p> Microlotes do Brasil e da Etiópia. </p>
+                </div>
+
+                <div class="card">
+                    <img src="images/fire-icon.png" alt="Ícone de Café">
+                    <h3> Torra Artesanal </h3>
+                    <p> Tostamos toda terça e sexta. </p>
+                </div>
+
+                <div class="card">
+                    <img src="images/croissant-icon.png" alt="Ícone de Café">
+                    <h3> Confeitaria </h3>
+                    <p> Pães e bolos sem conservantes. </p>
+                </div>
+
+                <div class="card">
+                    <img src="images/leaf-icon.png" alt="Ícone de Café">
+                    <h3> Sustentável </h3>
+                    <p> Embalagens compostáveis. </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="Cardapio">
+            <h2> Cardápio </h2>
+            <br>
+            <hr>
+
+            <div class="container-tabela">
+                <table>
+                    <thead>
+                        <tr>
+                            <th rowspan="2"> Bebida </th>
+                            <th colspan="2"> Tamanho </th>
+                            <th rowspan="2"> Origem </th>
+                        </tr>
+                        <tr>
+                            <th> Pequeno </th>
+                            <th> Grande </th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td> Espresso </td>
+                            <td> R$ 7 </td>
+                            <td> R$ 10 </td>
+                            <td> Sul de Minas </td>
+                        </tr>
+                        <tr>
+                            <td> Cappucino </td>
+                            <td> R$ 11 </td>
+                            <td> R$ 14 </td>
+                            <td> Mogiana </td>
+                        </tr>
+                        <tr>
+                            <td> V60 Filtrado </td>
+                            <td> R$ 13 </td>
+                            <td> R$ 17 </td>
+                            <td> Etiópia Yirgacheffe </td>
+                        </tr>
+                        <tr>
+                            <td> Cold Brew </td>
+                            <td> R$ 12 </td>
+                            <td> R$ 15 </td>
+                            <td> Cerrado Mineiro </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="FAQ">
+            <h2> Perguntas Frequentes </h2>
+            <br>
+            <hr>
+
+            <div class="container-dl">
+                <dl>
+                    <details>
+                        <summary> Vocês servem opções veganas? </summary>
+                        <br>
+                        <dt> Leites Vegetais </dt>
+                        <dd> Sim — aveia, amêndoas e coco, sem custo extra. </dd>
+                        <br>
+                        <dt> Confeitaria </dt>
+                        <dd> Temos pelo menos três opções 100% veganas todos os dias. </dd>
+                    </details>
+                </dl>
+
+                <dl>
+                    <details>
+                        <summary> Posso comprar os grãos para levar? </summary>
+                        <br>
+                        <dt> Embalagens </dt>
+                        <dd> 250g e 500g, com data de torra impressa. </dd>
+                        <br>
+                        <dt> Moagem </dt>
+                        <dd> Moemos no momento da compra, conforme seu método. </dd>
+                    </details>
+                </dl>
+
+                <dl>
+                    <details>
+                        <summary> Vocês têm Wi-Fi e tomadas? </summary>
+                        <br>
+                        <dt> Internet </dt>
+                        <dd> Fibra de 600 Mbps, sem senha. </dd>
+                        <br>
+                        <dt> Tomadas </dt>
+                        <dd> Em todas as mesas, inclusive na varanda. </dd>
+                    </details>
+                </dl>
+
+                <dl>
+                    <details>
+                        <summary> Como funcionam as reservas? </summary>
+                        <br>
+                        <dt> Capacidade </dt>
+                        <dd> Reservamos mesas para até 6 pessoas. </dd>
+                        <br>
+                        <dt> Antecedência </dt>
+                        <dd> Pelo menos 2 horas antes pelo formulário abaixo. </dd>
+                    </details>
+                </dl>
+            </div>
+        </section>
+
+        <section id="Reserva">
+            <h2> Faça sua Reserva </h2>
+            <br>
+            <hr>
+
+            <div class="container-form">
+                <form oninput="resultado.value = 'Olá, ' + nome.value + ' ' + sobrenome.value + '! Estamos te esperando.'">
+                    <input type="text" id="nome" placeholder="Nome">
+                    <input type="text" id="sobrenome" placeholder="Sobrenome">
+
+                    <output name="resultado" value="Digite seu Nome para Confirmar a Reserva"> <i> Digite seu nome para confirmar a reserva... </i></output>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+            <p> &copy; Café Aurora &bull; Fortaleza, Ceará &bull; Aberto das 7h às 22h</p>
+    </footer>
+</body>
+
+</html>
